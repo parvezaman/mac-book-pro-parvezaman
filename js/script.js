@@ -5,6 +5,7 @@ const extraStorageCost = document.getElementById('extra-storage-cost');
 const deliveryCharge = document.getElementById('delivary-charge');
 const subTotal = document.getElementById('sub-total');
 const finalTotal = document.getElementById('final-total');
+const promoCodeInput = document.getElementById('promo-code-input');
 
 // buttons assignment 
 const Button8GbMemory = document.getElementById('button-8-gb-memory');
@@ -14,6 +15,7 @@ const button512GbStorage = document.getElementById('button-512-gb-storage');
 const button1TbStorage = document.getElementById('button-1-tb-storage');
 const buttonDelivaryBy25 = document.getElementById('delivery-by-25');
 const buttonDelivaryBy21 = document.getElementById('delivery-by-21');
+const buttonApplyPromo = document.getElementById('apply-promo-button');
 
 
 // pricing
@@ -29,6 +31,7 @@ const priceDelivaryBy21 = 20;
 function getPrice(destinationID, price){
     document.getElementById(destinationID).innerText = price;
     subTotal.innerText = parseFloat(bestPrice.innerText) + parseFloat(extraMemoryCost.innerText) + parseFloat(extraStorageCost.innerText) + parseFloat(deliveryCharge.innerText);
+    finalTotal.innerText = subTotal.innerText;
 }
 
 
@@ -62,4 +65,14 @@ buttonDelivaryBy21.addEventListener('click', function(){
 })
 
 
-// subTotal.innerText = parseFloat(bestPrice.innerText) + parseFloat(extraMemoryCost.innerText) + parseFloat(extraStorageCost.innerText) + parseFloat(deliveryCharge.innerText);
+// apply promo code segment 
+function promoCode(){
+    if(promoCodeInput.value == 'stevekaku'){
+        finalTotal.innerText = parseFloat(finalTotal.innerText) - parseFloat(finalTotal.innerText)*.2;
+    }
+    promoCodeInput.value = '';
+}
+
+buttonApplyPromo.addEventListener('click',function(){
+    promoCode();
+})
