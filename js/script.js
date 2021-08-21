@@ -76,7 +76,13 @@ function promoCode(){
 }
 
 // apply 'stevekaku' for availing promo for 20% discount
-
+let counter = 1;
 buttonApplyPromo.addEventListener('click',function(){
-    promoCode();
+    if(counter ==1){
+        counter = counter + 1;
+        promoCode();
+    }
+    else{
+        buttonApplyPromo.setAttribute('disabled', true);
+    }
 })
