@@ -28,6 +28,8 @@ const priceDelivaryBy25 = 0;
 const priceDelivaryBy21 = 20;
 
 
+// function to get value for individuals along with totals
+
 function getPrice(destinationID, price){
     document.getElementById(destinationID).innerText = price;
     subTotal.innerText = parseFloat(bestPrice.innerText) + parseFloat(extraMemoryCost.innerText) + parseFloat(extraStorageCost.innerText) + parseFloat(deliveryCharge.innerText);
@@ -72,6 +74,8 @@ function promoCode(){
     }
     promoCodeInput.value = '';
 }
+
+// apply 'stevekaku' for availing promo for 20% discount
 
 buttonApplyPromo.addEventListener('click',function(){
     promoCode();
