@@ -5,8 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- vanila css -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <section class="container mt-5 mb-5">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="./images/mac.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <h1 class="fs-1">Customize your Blue 24-inch  iMac with Apple M1 chip. </h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SW storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard -US English </p>
+                </div>
+                <div>
+                    <h3>Memory</h3>
+                    <button class="my-button">8GB unified memory</button>
+                    <button class="my-button">16GB unified memory</button>
+                </div>
+                <div>
+                    <h3>storage</h3>
+                    <button class="my-button">256GB SSD storage</button>
+                    <button class="my-button">512GB SSD storage</button>
+                    <button class="my-button">1TB SSD storage</button>
+                </div>
+                <div>
+                    <h3>Choose your delivery option</h3>
+                    <button class="my-button">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button class="my-button">Friday, Aug 21 Delivery charge $20
+                    </button>
+                </div>
+
+                <div class="mt-5">
+                    <table class="table table-hover">
+                        <tbody>
+                          <tr>
+                            <!-- <th scope="row">1</th> -->
+                            <td><h5>Best price</h5></td>
+                            <td><h5>$ <span>1299</span></h5></td>
+                          </tr>
+                          <tr>
+                            <!-- <th scope="row">1</th> -->
+                            <td><h5>Extra Memory Cost</h5></td>
+                            <td><h5>$ <span>0</span></h5></td>
+                          </tr>
+                          <tr>
+                            <!-- <th scope="row">1</th> -->
+                            <td><h5>Extra Storage Cost</h5></td>
+                            <td><h5>$ <span>0</span></h5></td>
+                          </tr>
+                          <tr>
+                            <!-- <th scope="row">1</th> -->
+                            <td><h5>Delivery charge</h5></td>
+                            <td><h5>$ <span>0</span></h5></td>
+                          </tr>
+                          <hr>
+                          
+                          <tfoot>
+                            <tr>
+                              <!-- <th scope="row">1</th> -->
+                                <td><h5>Total Price</h5></td>
+                                <td><h5>$ <span>0</span></h5></td>
+                            </tr>
+                        </tfoot>
+                          
+                        </tbody>
+                      </table>
+                </div>
+
+                <!-- Add promo segment -->
+
+                <div class="mt-5">
+                    <h3>Add Promo Code</h3>
+                    <div class="d-flex">
+                        <input id="promo-code-input" type="text">
+                        <button id="apply-promo-button" class="btn btn-light">Apply</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+
+    </section>
+
+
+    <footer>
+        <h1 class="text-center mb-5">Total: $<span>1299</span></h1>
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

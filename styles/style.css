@@ -1,0 +1,32 @@
+.my-button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.my-button:hover{
+    background-color: gray;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+#promo-code-input{
+    width: 90%;
+    height: 35px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+#apply-promo-button{
+    background-color: #dc3545;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+}
+
+#apply-promo-button:hover{
+    background-color: #ff041d;
+    transition: .3s ease-in-out;
+
+}
